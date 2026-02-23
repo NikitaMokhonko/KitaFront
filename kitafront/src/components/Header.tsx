@@ -24,45 +24,49 @@ export default function Header() {
       }`}
     >
       <div
-        className="w-full hidden sm:flex flex-row justify-between items-center px-4 cursor-pointer"
+        className="w-full hidden sm:flex flex-row justify-between items-center px-4"
       >
         <a>
           <img
             src="/KFLogo.png"
             alt="KitaFront Logo"
-            className="h-14 w-26 rounded-4xl"
+            className="h-14 w-26 rounded-4xl cursor-pointer"
             onClick={() => navigate({ to: "/" })}
           />
         </a>
         <div>
-          <a
+          <button
             className="text-xl font-bold text-[#074C97] mx-4 cursor-pointer"
             onClick={() => navigate({ to: "/" })}
           >
             Home
-          </a>
-          <a
+            <span className="block h-px bg-black w-full transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
+          </button>
+          <button
             className="text-xl font-bold text-[#074C97] mx-4 cursor-pointer"
             onClick={() => navigate({ to: "/about" })}
           >
             About Us
-          </a>
-          <a
+            <span className="block h-px bg-black w-full transform scale-x-0 origin-left transition-transform duration-300 ease-out hover:scale-x-100" />
+          </button>
+          <button
             className="text-xl font-bold text-[#074C97] mx-4 cursor-pointer"
             onClick={() => navigate({ to: "/services" })}
           >
             Services
-          </a>
-          <a
+          </button>
+          <button
             className="text-xl font-bold text-[#074C97] mx-4 cursor-pointer"
             onClick={() => navigate({ to: "/pricing" })}
           >
             Pricing
-          </a>
-          <a
+          </button>
+          <button
             className="text-xl font-bold text-[#074C97] mx-4 cursor-pointer"
             onClick={() => navigate({ to: "/contact" })}
-          ></a>
+          >
+            Contact
+          </button>
         </div>
         <a
           className="text-xl font-bold text-white bg-[#074C97] border-2 border-[#074C97] py-1 px-8 rounded-4xl cursor-pointer hover:bg-transparent hover:text-[#074C97] duration-300"
