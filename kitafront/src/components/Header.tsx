@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
+      setScrolled(window.scrollY > 60);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sm:bg-white text-white sm:rounded-4xl sticky top-0 sm:top-5 flex items-center z-60 sm:border-2 sm:border-[#074C97] sm:mt-5 sm:py-1 transition-all duration-400 mx-auto ${
+      className={`sm:bg-white text-white sm:rounded-4xl sticky top-0 sm:top-5 flex items-center z-60 sm:border-2 sm:border-[#074C97] sm:mt-5 sm:py-1 transition-all duration-500 mx-auto ${
         scrolled ? "sm:max-w-282" : "sm:max-w-420"
       }`}
     >
