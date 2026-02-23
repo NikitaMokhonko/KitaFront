@@ -25,13 +25,13 @@ export default function Header() {
     >
       <div
         className="w-full hidden sm:flex flex-row justify-between items-center px-4 cursor-pointer"
-        onClick={() => navigate({ to: "/" })}
       >
         <a>
           <img
             src="/KFLogo.png"
             alt="KitaFront Logo"
             className="h-14 w-26 rounded-4xl"
+            onClick={() => navigate({ to: "/" })}
           />
         </a>
         <div>
@@ -64,7 +64,10 @@ export default function Header() {
             onClick={() => navigate({ to: "/contact" })}
           ></a>
         </div>
-        <a className="text-xl font-bold text-white bg-[#074C97] border-2 border-[#074C97] py-1 px-8 rounded-4xl cursor-pointer hover:bg-transparent hover:text-[#074C97] duration-300">
+        <a
+          className="text-xl font-bold text-white bg-[#074C97] border-2 border-[#074C97] py-1 px-8 rounded-4xl cursor-pointer hover:bg-transparent hover:text-[#074C97] duration-300"
+          onClick={() => navigate({ to: "/contact" })}
+        >
           Get Started
         </a>
       </div>
