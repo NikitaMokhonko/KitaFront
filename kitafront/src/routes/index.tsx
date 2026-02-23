@@ -12,8 +12,8 @@ function App() {
     {
       name: "Basic",
       description: "Perfect for personal projects and small blogs.",
-      upfront: { price: "5.000kr", recurring: "200kr/mo" },
-      monthly: { price: "500kr/mo", perks: "1hr dev time/mo" },
+      upfront: { price: "10.000kr", recurring: "200kr/mo" },
+      monthly: { price: "1.000kr/mo", perks: "1hr dev time/mo" },
       features: [
         "5 Pages",
         "Contact Form",
@@ -24,8 +24,8 @@ function App() {
     {
       name: "Standard",
       description: "Ideal for small businesses needing a professional edge.",
-      upfront: { price: "10.000kr", recurring: "200kr/mo" },
-      monthly: { price: "1.000kr/mo", perks: "2hrs dev time/mo" },
+      upfront: { price: "15.000kr", recurring: "200kr/mo" },
+      monthly: { price: "1.500kr/mo", perks: "2hrs dev time/mo" },
       features: [
         "10 Pages",
         "Advanced SEO",
@@ -36,8 +36,8 @@ function App() {
     {
       name: "Premium",
       description: "Full-scale solution for growing enterprises.",
-      upfront: { price: "20.000kr", recurring: "400kr/mo" },
-      monthly: { price: "2.000kr/mo", perks: "5hrs dev time/mo" },
+      upfront: { price: "20.000kr +", recurring: "400kr/mo" },
+      monthly: { price: "2.000kr + /mo", perks: "5hrs dev time/mo" },
       features: [
         "Unlimited Pages",
         "E-commerce Ready",
@@ -116,6 +116,7 @@ function App() {
             >
               <img
                 src="/skinsmart-iphone.png"
+                alt="Skinsmart Website Screenshot"
                 className="w-70 rounded-4xl bg-transparent p-5 hover:scale-105 duration-600 hover:rotate-z-1"
               />
             </a>
@@ -126,6 +127,7 @@ function App() {
             >
               <img
                 src="/renhus-iphone.png"
+                alt="Nordic Renhus Website Screenshot"
                 className="w-70 rounded-4xl bg-transparent p-5 hover:scale-105 duration-600"
               />
             </a>
@@ -136,6 +138,7 @@ function App() {
             >
               <img
                 src="/sweethouse-iphone.png"
+                alt="Sweethouse Website Screenshot"
                 className="w-70 rounded-4xl bg-transparent p-5 hover:scale-105 duration-600 hover:-rotate-z-1"
               />
             </a>
