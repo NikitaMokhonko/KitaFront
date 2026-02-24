@@ -19,12 +19,12 @@ export default function Header() {
 
   return (
     <header
-      className={`sm:bg-white text-white sm:rounded-4xl sticky top-0 sm:top-5 flex items-center z-60 sm:border-2 sm:border-[#074C97] sm:mt-5 sm:py-1 transition-all duration-500 mx-auto ${
-        scrolled ? "sm:max-w-282" : "sm:max-w-420"
+      className={`lg:bg-white text-white lg:rounded-4xl sticky top-0 lg:top-5 flex items-center z-60 lg:border-2 lg:border-[#074C97] lg:mt-5 lg:py-1 transition-all duration-500 mx-auto ${
+        scrolled ? "lg:max-w-282" : "lg:max-w-420"
       }`}
     >
       <div
-        className="w-full hidden sm:flex flex-row justify-between items-center px-4"
+        className="w-full hidden lg:flex flex-row justify-between items-center px-4"
       >
         <a>
           <img
@@ -75,8 +75,8 @@ export default function Header() {
           Get Started
         </a>
       </div>
-      <div className="block sm:hidden w-full">
-        <div className="flex sm:hidden flex-row bg-[#074C97] items-center justify-between mx-auto w-full px-6 pt-2">
+      <div className="block lg:hidden w-full">
+        <div className="flex lg:hidden flex-row bg-[#074C97] items-center justify-between mx-auto w-full px-6 pt-2">
           <div></div>
           <img
             src="/KFLogoWhite.png"
@@ -84,7 +84,7 @@ export default function Header() {
             className="ml-5 h-18"
           />
           <button
-            className="sm:hidden flex flex-col space-y-1"
+            className="lg:hidden flex flex-col space-y-1"
             onClick={() => setMenuOpen((s) => !s)}
             aria-label="Toggle menu"
             type="button"
@@ -107,7 +107,7 @@ export default function Header() {
           </button>
         </div>
         {menuOpen && (
-          <div className="sm:hidden text-xl font-semibold flex flex-col bg-[#074C97] text-white pb-5 space-y-5 pt-2 border-b-2 border-white">
+          <div className="lg:hidden text-xl font-semibold flex flex-col bg-[#074C97] text-white pb-5 space-y-5 pt-2 border-b-2 border-white">
             <button
               onClick={() => {
                 navigate({ to: "/" });

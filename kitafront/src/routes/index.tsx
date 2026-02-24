@@ -51,7 +51,7 @@ function App() {
     <div className="min-h-screen bg-[#074C97] overflow-x-hidden">
       <div className="relative pb-32 sm:pb-48 lg:pb-60">
         <div
-          className={`text-4xl text-center sm:text-left pt-20 sm:pt-0 text-white flex flex-col sm:flex-row sm:h-182 sm:justify-between items-center ${maxw}`}
+          className={`text-4xl text-center sm:text-left pt-15 sm:pt-0 text-white flex flex-col sm:flex-row sm:h-182 sm:justify-between items-center ${maxw}`}
         >
           <div className="sm:max-w-[46%]">
             <h1 className="sm:ml-5 font-bold">
