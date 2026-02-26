@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
+import ProjectsCarousel from "../components/ProjectsCarousel";
 
 export const Route = createFileRoute("/")({ component: App });
 
@@ -108,41 +109,7 @@ function App() {
           <h1 className="text-4xl text-[#074C97] font-bold text-center pt-10 sm:pt-0 mb-25">
             Don't just take our word for it - see for yourself.
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-            <a
-              href="https://skinsmart.se"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/skinsmart-iphone.png"
-                alt="Skinsmart Website Screenshot"
-                className="w-70 rounded-4xl bg-transparent p-5 hover:scale-105 duration-600 hover:rotate-z-1"
-              />
-            </a>
-            <a
-              href="https://nordic-renhus.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/renhus-iphone.png"
-                alt="Nordic Renhus Website Screenshot"
-                className="w-70 rounded-4xl bg-transparent p-5 hover:scale-105 duration-600"
-              />
-            </a>
-            <a
-              href="https://sweethouse-jet.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/sweethouse-iphone.png"
-                alt="Sweethouse Website Screenshot"
-                className="w-70 rounded-4xl bg-transparent p-5 hover:scale-105 duration-600 hover:-rotate-z-1"
-              />
-            </a>
-          </div>
+          <ProjectsCarousel />
         </div>
 
         <div className={`${maxw} mt-32`}>
