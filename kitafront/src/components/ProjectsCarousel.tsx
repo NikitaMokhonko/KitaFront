@@ -36,7 +36,7 @@ export default function ProjectsCarousel() {
   useAutoplay(setIndex, projects.length, isPaused);
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto">
+    <div className="relative w-full max-w-5xl mx-auto sm:min-h-72">
       {/* Slide */}
       <div
         className="overflow-hidden rounded-3xl"
